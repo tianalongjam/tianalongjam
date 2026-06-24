@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?text=Hi,%20I'm%20Tiana%20👋&animation=fadeIn&type=waving&color=gradient&customColorList=12,20,24&height=120&fontColor=ffffff&fontSize=42"/>
+  <img src="https://capsule-render.vercel.app/api?text=Hi,%20I'm%20Tiana%20(˶ˆᗜˆ˵)&animation=fadeIn&type=waving&color=gradient&customColorList=12,20,24&height=120&fontColor=ffffff&fontSize=42"/>
 </p>
 
 <p align="center">
@@ -19,11 +19,12 @@ majors:      Data Science & Mathematics
 minor:       Business (Finance & Accounting)
 graduating:  December 2026
 currently:
-  - UW-Madison SAIL Program — building an original AI application (Summer 2026)
+  - Data Science Intern @ Infisum
+  - UW-Madison SAIL Program — building an original AI speech therapy application for children around the world (Summer 2026)
   - Undergraduate Research — Scientific Machine Learning & Numerical Methods
   - Previously: Data Science Intern @ Deloitte
-interests:   [Machine Learning, Scientific Computing, Data Engineering, Fair AI]
-looking_for: Full-time Data Science / ML Engineering roles (2027)
+interests:   Machine Learning, Scientific Computing, Data Engineering, Fair AI, Quant
+looking_for: Full-time Data Science / ML Engineering roles (2026/2027)
 ```
 
 ---
