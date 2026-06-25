@@ -5,9 +5,13 @@
 <p align="center">
   <a href="https://linkedin.com/in/tiana-longjam"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"/></a>
   &nbsp;&nbsp;
-  <a href="mailto:longjam@wisc.edu"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/></a>
+  <a href="mailto:tianalongjam@gmail.com"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/></a>
   &nbsp;&nbsp;
   <a href="https://tianalongjam.github.io/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"/></a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Data+Science+%26+Mathematics+%40+UW%E2%80%93Madison;ML+%7C+Scientific+Computing+%7C+Data+Engineering;Building+AI+that+actually+helps+people" alt="Typing SVG"/>
 </p>
 
 ---
@@ -20,16 +24,21 @@ minor:       Business (Finance & Accounting)
 graduating:  December 2026
 currently:
   - Data Science Intern @ Infisum
-  - UW-Madison SAIL Program — building an original AI speech therapy application for children around the world (Summer 2026)
+  - UW–Madison SAIL Program — building SpeakEasy, an AI speech therapy
+    companion for children worldwide (Summer 2026)
   - Undergraduate Research — Scientific Machine Learning & Numerical Methods
+    (Neural Semi-Lagrangian methods for high-dimensional PDEs)
   - Previously: Data Science Intern @ Deloitte
 interests:   Machine Learning, Scientific Computing, Data Engineering, Fair AI, Quant
+certifications:
+  - AWS Certified Cloud Practitioner
+  - AWS ML Engineer – Associate (in progress)
 looking_for: Full-time Data Science / ML Engineering roles (2026/2027)
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="42" height="42" title="Python"/>
@@ -51,31 +60,127 @@ looking_for: Full-time Data Science / ML Engineering roles (2026/2027)
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="42" height="42" title="PostgreSQL"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="42" height="42" title="Docker"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="42" height="42" title="Git"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="42" height="42" title="React"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg" width="42" height="42" title="Neo4j"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="42" height="42" title="FastAPI"/>
 </p>
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
-### 🗺️ [Wisconsin Census Population Predictor](https://github.com/tianalongjam/Wisconsin-Census-Population-Predictor)
-Geospatial ML pipeline integrating GeoPandas, SQLite, and scikit-learn to predict county- and tract-level population from multi-source land-use and census data. Produces interactive choropleth maps and visual analytics.
+### [SpeakEasy — AI Speech Therapy Companion](https://github.com/tianalongjam) &nbsp; `Summer 2026 · SAIL Program`
+WhatsApp-native AI speech therapy app built for 500+ underserved children worldwide. Integrates Twilio, OpenAI Whisper, a Mel Spectrogram + CNN pronunciation scorer, and a Contextual Bandit RL agent that adapts exercise selection in real time. Phoneme-level accuracy is tracked longitudinally in a **Neo4j Knowledge Graph**, with a progress dashboard surfacing fluency heatmaps for users and caregivers.
 
-### 🔍 [Bias & Source Diversity Checker](https://github.com/tianalongjam/search-engine-with-exa-ai)
-Analyzes search engine results for bias and source concentration using HHI, Gini index, and Shannon entropy metrics. Built with the Exa AI API and HuggingFace sentiment models.
-
-### 💰 [Loan Insights & Fair Lending Analysis](https://github.com/tianalongjam/loans_analysis)
-Custom OOP + BST framework to analyze 2020 Wisconsin HMDA loan data, surfacing disparities in lending outcomes across demographic and economic segments.
-
-### 🏎️ [F1 Point Systems Analysis](https://github.com/tianalongjam/f1_point_systems)
-Investigates how old vs. new Formula 1 scoring systems affect championship dynamics, especially for midfield teams — using real race data and simulated re-scoring.
+`Neo4j` `OpenAI Whisper` `CNN` `Contextual Bandit RL` `RAG` `wav2vec` `Twilio` `Python`
 
 ---
 
-## 📊 GitHub Stats
+### [PrivacyLens](https://github.com/tianalongjam/PrivacyLens--CheeseHacks-Hackathon) &nbsp; `CheeseHacks 2026`
+Full-stack privacy audit app that scans 30+ apps from a single phone screenshot and returns plain-English risk breakdowns in under 30 seconds. Dual-backend architecture (Flask for AI vision, FastAPI for scoring) using Google Gemini 2.5 Flash Vision API — achieving **90%+ app icon detection accuracy** across 37 apps. Risk scores are weighted against real permission + tracker data from the Exodus Privacy database.
+
+`React` `FastAPI` `Flask` `Google Gemini` `Python`
+
+---
+
+### [Competitive Programming Analytics](https://github.com/tianalongjam/Competitive-Programming-Analytics)
+Distributed analytics platform over 8,500+ problems and 170,000+ solutions. Bucketed Hive tables cut query latency by **85%**. A natural language → Spark SQL interface (Gemini API) lets users query the dataset in plain English. Also includes a PySpark MLlib `DecisionTreeRegressor` pipeline that predicts missing difficulty scores across 10 tree depths.
+
+`Apache Spark` `Hive` `PySpark MLlib` `Gemini API` `Python`
+
+---
+
+### [Wisconsin Census Population Predictor](https://github.com/tianalongjam/Wisconsin-Census-Population-Predictor)
+Geospatial ML pipeline integrating GeoPandas, SQLite, and scikit-learn to predict county- and tract-level population from multi-source land-use and census data (GeoJSON, shapefiles, raster imagery). Features cross-validated regression models with interpretability analysis and interactive choropleth visualizations.
+
+`GeoPandas` `scikit-learn` `SQLite` `Python`
+
+---
+
+### [Bias & Source Diversity Checker](https://github.com/tianalongjam/search-engine-with-exa-ai)
+Analyzes search engine results for bias and source concentration using HHI, Gini index, and Shannon entropy across 50+ Exa API results per query. HuggingFace Transformer models surface domain-level sentiment skew via heatmaps and bar charts.
+
+`Python` `Exa AI API` `HuggingFace` `NLP`
+
+---
+
+### [Loan Insights & Fair Lending Analysis](https://github.com/tianalongjam/loans_analysis)
+Custom OOP + BST framework to analyze 25,000+ Wisconsin HMDA mortgage applicants, surfacing racial lending disparities and interest rate distributions. BST-indexed lookups benchmarked against linear scan across 15,000+ loans — visualizing O(log n) vs. O(n) performance gap.
+
+`Python` `OOP` `BST` `Data Visualization`
+
+---
+
+### [Reflect — Mental Health Companion](https://github.com/tianalongjam/Reflect-MadHacks) &nbsp; `MadData 2026`
+Full-stack mental wellness app with 4 core features: facility finder, mood tracker, AI journal, and streak tracker. Google Maps Distance Matrix + Geocoding APIs power real-time proximity sorting across **8,319 SAMHSA-verified facilities**. PostgreSQL on Supabase was populated by parsing 60+ SAMHSA service codes into queryable boolean columns.
+
+`React` `Vite` `Express` `Supabase` `PostgreSQL` `Google Maps API`
+
+---
+
+### [Cloud-Based Geospatial School Analytics Pipeline](https://github.com/tianalongjam/Cloud-Based-Geospatial-School-Analytics-Pipeline-)
+End-to-end GCP pipeline across 4 services (GCS, Dataform, BigQuery, GCP VMs) processing 2,000+ Wisconsin schools. BigQuery geospatial SQL (ST_GEOGPOINT, spatial joins) maps nearest-school relationships across all 72 counties. Three dependency-managed Dataform pipelines automate raw Parquet → geospatial table transformation.
+
+`GCP` `BigQuery` `Dataform` `GCS` `SQL`
+
+---
+
+### [F1 Point Systems Analysis](https://github.com/tianalongjam/f1_point_systems)
+Investigates how old vs. new Formula 1 scoring systems affect championship dynamics, with a focus on midfield competitiveness — using real race data and simulated re-scoring across seasons.
+
+`Python` `Data Analysis` `Visualization`
+
+---
+
+## What I'm Working On
+
+| Project | Description |
+|--------|-------------|
+| **SpeakEasy** | AI speech therapy companion (SAIL Program, Summer 2026) |
+| **Neural Semi-Lagrangian Research** | Scientific ML for high-dimensional PDEs — 50x L-inf error improvement over baselines |
+| **AWS ML Engineer – Associate** | Certification in progress |
+
+---
+
+## Beyond the Code
+
+```yaml
+communities:
+  - WiCS (Women in Computer Science) — Events Lead
+  - MadData — Organizer
+  - ML Reading Group — Member
+  - RangDe Dance
+fun_facts:
+  - I study PDEs for fun (no, really)
+  - F1 fan who actually ran the numbers on whether the scoring system is fair
+  - Atomic Habits reader turned morning routine builder
+```
+
+---
+
+## Let's Connect
+
+<p align="left">
+  <a href="mailto:longjam@wisc.edu">
+    <img src="https://img.shields.io/badge/Email-longjam@wisc.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://tianalongjam.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-tianalongjam.github.io-4A90D9?style=for-the-badge&logo=githubpages&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://drive.google.com/file/d/1nVGfGoxgTpFd6Yrv8Sp36t_4xkG7q0ml/view?usp=sharing">
+    <img src="https://img.shields.io/badge/Resume-View%20%2F%20Download-6B46C1?style=for-the-badge&logo=googledrive&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/tiana-longjam">
+    <img src="https://img.shields.io/badge/LinkedIn-tiana--longjam-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
+
+---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tianalongjam&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
-  &nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tianalongjam&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
 </p>
 
