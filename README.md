@@ -109,7 +109,7 @@ looking_for: Full-time Data Science / ML Engineering roles (2026/2027)
 
 ## Featured Projects
 
-### [SpeakEasy — AI Speech Therapy Companion](https://github.com/tianalongjam) &nbsp; `Summer 2026 · SAIL Program`
+### [SpeakEasy — AI Speech Therapy Companion](https://github.com/SahelAbraham/SpeakEasy) &nbsp; `Summer 2026 · SAIL Program`
 WhatsApp-native AI speech therapy app built for 500+ underserved children worldwide. Integrates Twilio, OpenAI Whisper, a Mel Spectrogram + CNN pronunciation scorer, and a Contextual Bandit RL agent that adapts exercise selection in real time. Phoneme-level accuracy is tracked longitudinally in a **Neo4j Knowledge Graph**, with a progress dashboard surfacing fluency heatmaps for users and caregivers.
 
 `Neo4j` `OpenAI Whisper` `CNN` `Contextual Bandit RL` `RAG` `wav2vec` `Twilio` `Python`
