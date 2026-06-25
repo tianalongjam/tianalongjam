@@ -1,17 +1,57 @@
+<!--
+===================================================================================
+  SETUP: Snake Contribution Graph (one-time, ~2 minutes)
+  1. In this repo, go to Settings > Actions > General
+     - Set "Workflow permissions" to "Read and write permissions"
+  2. Create file: .github/workflows/snake.yml with this content:
+
+  name: Generate Snake
+  on:
+    schedule:
+      - cron: "0 0 * * *"
+    workflow_dispatch:
+  jobs:
+    generate:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: Platane/snk@v3
+          with:
+            github_user_name: tianalongjam
+            outputs: |
+              dist/github-contribution-grid-snake.svg
+              dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        - uses: crazy-max/ghaction-github-pages@v3
+          with:
+            target_branch: output
+            build_dir: dist
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  3. Go to Actions tab > "Generate Snake" > Run workflow
+  4. The snake SVG will be committed to the `output` branch automatically.
+===================================================================================
+-->
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?text=Hi,%20I'm%20Tiana%20(˶ˆᗜˆ˵)&animation=fadeIn&type=waving&color=gradient&customColorList=12,20,24&height=120&fontColor=ffffff&fontSize=42"/>
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/tiana-longjam"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"/></a>
+  <a href="https://linkedin.com/in/tiana-longjam"><img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"/></a>
   &nbsp;&nbsp;
-  <a href="mailto:tianalongjam@gmail.com"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/></a>
+  <a href="mailto:longjam@wisc.edu"><img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/></a>
   &nbsp;&nbsp;
-  <a href="https://tianalongjam.github.io/"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"/></a>
+  <a href="https://tianalongjam.github.io/"><img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"/></a>
+  &nbsp;&nbsp;
+  <a href="https://drive.google.com/file/d/1nVGfGoxgTpFd6Yrv8Sp36t_4xkG7q0ml/view?usp=sharing">
+    <img src="https://img.shields.io/badge/Resume-View%20PDF-6B46C1?style=flat-square&logo=googledrive&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
+  <img src="https://komarev.com/ghpvc/?username=tianalongjam&style=flat-square&color=A78BFA&label=profile+views"/>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Data+Science+%26+Mathematics+%40+UW%E2%80%93Madison;ML+%7C+Scientific+Computing+%7C+Data+Engineering;Building+AI+that+actually+helps+people" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=A78BFA&center=true&vCenter=true&width=620&lines=Data+Science+%26+Mathematics+%40+UW-Madison;ML+%7C+Scientific+Computing+%7C+Data+Engineering;Building+AI+that+actually+helps+people" alt="Typing SVG"/>
 </p>
 
 ---
@@ -84,7 +124,7 @@ Full-stack privacy audit app that scans 30+ apps from a single phone screenshot 
 ---
 
 ### [Competitive Programming Analytics](https://github.com/tianalongjam/Competitive-Programming-Analytics)
-Distributed analytics platform over 8,500+ problems and 170,000+ solutions. Bucketed Hive tables cut query latency by **85%**. A natural language → Spark SQL interface (Gemini API) lets users query the dataset in plain English. Also includes a PySpark MLlib `DecisionTreeRegressor` pipeline that predicts missing difficulty scores across 10 tree depths.
+Distributed analytics platform over 8,500+ problems and 170,000+ solutions. Bucketed Hive tables cut query latency by **85%**. A natural language to Spark SQL interface (Gemini API) lets users query the dataset in plain English. Includes a PySpark MLlib `DecisionTreeRegressor` pipeline that predicts missing difficulty scores across 10 tree depths.
 
 `Apache Spark` `Hive` `PySpark MLlib` `Gemini API` `Python`
 
@@ -105,7 +145,7 @@ Analyzes search engine results for bias and source concentration using HHI, Gini
 ---
 
 ### [Loan Insights & Fair Lending Analysis](https://github.com/tianalongjam/loans_analysis)
-Custom OOP + BST framework to analyze 25,000+ Wisconsin HMDA mortgage applicants, surfacing racial lending disparities and interest rate distributions. BST-indexed lookups benchmarked against linear scan across 15,000+ loans — visualizing O(log n) vs. O(n) performance gap.
+Custom OOP + BST framework to analyze 25,000+ Wisconsin HMDA mortgage applicants, surfacing racial lending disparities and interest rate distributions. BST-indexed lookups benchmarked against linear scan across 15,000+ loans, visualizing O(log n) vs. O(n) performance gap.
 
 `Python` `OOP` `BST` `Data Visualization`
 
@@ -119,7 +159,7 @@ Full-stack mental wellness app with 4 core features: facility finder, mood track
 ---
 
 ### [Cloud-Based Geospatial School Analytics Pipeline](https://github.com/tianalongjam/Cloud-Based-Geospatial-School-Analytics-Pipeline-)
-End-to-end GCP pipeline across 4 services (GCS, Dataform, BigQuery, GCP VMs) processing 2,000+ Wisconsin schools. BigQuery geospatial SQL (ST_GEOGPOINT, spatial joins) maps nearest-school relationships across all 72 counties. Three dependency-managed Dataform pipelines automate raw Parquet → geospatial table transformation.
+End-to-end GCP pipeline across 4 services (GCS, Dataform, BigQuery, GCP VMs) processing 2,000+ Wisconsin schools. BigQuery geospatial SQL maps nearest-school relationships across all 72 counties. Three dependency-managed Dataform pipelines automate raw Parquet to geospatial table transformation.
 
 `GCP` `BigQuery` `Dataform` `GCS` `SQL`
 
@@ -158,11 +198,23 @@ fun_facts:
 
 ---
 
+## Contribution Graph
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tianalongjam/tianalongjam/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tianalongjam/tianalongjam/output/github-contribution-grid-snake.svg"/>
+  <img alt="Snake animation of GitHub contribution graph" src="https://raw.githubusercontent.com/tianalongjam/tianalongjam/output/github-contribution-grid-snake.svg"/>
+</picture>
+
+> The snake updates daily via GitHub Actions. See setup instructions in this file's source if it isn't running yet.
+
+---
+
 ## Let's Connect
 
 <p align="left">
   <a href="mailto:longjam@wisc.edu">
-    <img src="https://img.shields.io/badge/Email-longjam@wisc.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Email-longjam%40wisc.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
   &nbsp;
   <a href="https://tianalongjam.github.io/">
