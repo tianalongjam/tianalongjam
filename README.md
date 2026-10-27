@@ -61,14 +61,16 @@ name:        Tiana Longjam
 school:      University of Wisconsin–Madison
 majors:      Data Science & Mathematics
 minor:       Business (Finance & Accounting)
-graduating:  December 2026
+graduating:  May 2027
 currently:
+  - Applied AI & Analytics Intern @ SharkNinja
+Previously: 
   - Data Science Intern @ Infisum
   - UW–Madison SAIL Program — building SpeakEasy, an AI speech therapy
     companion for children worldwide (Summer 2026)
   - Undergraduate Research — Scientific Machine Learning & Numerical Methods
     (Neural Semi-Lagrangian methods for high-dimensional PDEs)
-  - Previously: Data Science Intern @ Deloitte
+  - Data Science Intern @ Deloitte
 interests:   Machine Learning, Scientific Computing, Data Engineering, Fair AI, Quant
 certifications:
   - AWS Certified Cloud Practitioner
