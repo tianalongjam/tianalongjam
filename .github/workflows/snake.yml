@@ -7,16 +7,6 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug calendar (temporary)
-        env:
-          TOKEN: ${{ secrets.SNAKE_TOKEN }}
-        run: |
-          curl -sD headers.txt -o cal.json -H "Authorization: bearer $TOKEN" -X POST https://api.github.com/graphql \
-            -d '{"query":"{viewer{login} user(login:\"tianalongjam\"){contributionsCollection{restrictedContributionsCount contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}}}"}'
-          grep -i -E '^x-oauth-scopes|^x-github-sso' headers.txt || echo "no scope/sso headers"
-          jq -r '.errors // empty' cal.json
-          jq -r '"viewer=\(.data.viewer.login) restricted=\(.data.user.contributionsCollection.restrictedContributionsCount) total=\(.data.user.contributionsCollection.contributionCalendar.totalContributions)"' cal.json
-          jq -r '[.data.user.contributionsCollection.contributionCalendar.weeks[].contributionDays[]|select(.contributionCount>0)|"\(.date):\(.contributionCount)"]|join(" ")' cal.json
       - uses: Platane/snk@v3
         with:
           github_user_name: tianalongjam
